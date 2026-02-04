@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import { getRecipe } from "../services/api";
 import type { Recipe } from "../types";
+import FavoriteButton from "../components/FavoriteButton";
 import "./RecipePage.css";
 
 export default function RecipePage() {
@@ -24,7 +25,10 @@ export default function RecipePage() {
       {recipe.image_url && (
         <img src={recipe.image_url} alt={recipe.name} className="recipe-detail-img" />
       )}
-      <h2>{recipe.name}</h2>
+      <div className="recipe-detail-header">
+        <h2>{recipe.name}</h2>
+        <FavoriteButton recipeID={recipe.id} />
+      </div>
       <p className="recipe-detail-meta">
         {recipe.category} &middot; {recipe.prep_time + recipe.cook_time} min &middot;{" "}
         {recipe.servings} portions
