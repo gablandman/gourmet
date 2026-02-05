@@ -21,11 +21,12 @@
   padding: 1rem;
 }
 
-.recipe-card-body h3 {
+.recipe-card-body h2 {
+  font-size: 1.1rem;
   margin-bottom: 0.25rem;
 }
 
 .recipe-card-category {
   font-size: 0.85rem;
-  color: #888;
+  color: #595959;
 }

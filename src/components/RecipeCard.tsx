@@ -6,10 +6,10 @@ export default function RecipeCard({ recipe }: { recipe: Recipe }) {
   return (
     <Link to={`/recettes/${recipe.id}`} className="recipe-card">
       {recipe.image_url && (
-        <img src={recipe.image_url} alt={recipe.name} className="recipe-card-img" />
+        <img src={recipe.image_url} alt={recipe.name} className="recipe-card-img" loading="lazy" width="400" height="180" />
       )}
       <div className="recipe-card-body">
-        <h3>{recipe.name}</h3>
+        <h2>{recipe.name}</h2>
         <span className="recipe-card-category">{recipe.category}</span>
       </div>
     </Link>
