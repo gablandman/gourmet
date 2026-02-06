@@ -1,8 +1,6 @@
 import type { Recipe, User, LoginCredentials } from "../types";
 
-const BASE_URL = import.meta.env.DEV
-  ? "/api"
-  : "https://gourmet.cours.quimerch.com";
+const BASE_URL = "/api";
 
 const JSON_HEADERS = {
   Accept: "application/json",
