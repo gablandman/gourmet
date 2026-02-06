@@ -67,4 +67,8 @@ docker: multi-stage build (node for build, nginx for serve), non-root user, port
 
 git: incremental commits, ci tested locally with act before pushing
 
+Locally, it looked more like this :
+
+<img width="897" height="645" alt="Capture d&#39;écran 2026-02-06 154916" src="https://github.com/user-attachments/assets/1a796bc1-9717-4fde-b50e-4214aed37a3c" />
+
 linting: eslint with typescript-eslint.
